@@ -74,7 +74,7 @@ public class ClienteController {
 		
 		clienteService.save(cliente);
 		status.setComplete();
-		flash.addFlashAttribute("success", mensajeFlash);
+		flash.addFlashAttribute("success", "Cliente agregado con éxito");
 		return "redirect:listar";
 	}
 	
